@@ -4,4 +4,9 @@ then embed the svg here.
 This means no clickable links, so we'll list them here:
 * <https://wentam.net/>
 
-![alt](README.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="README.svg">
+  <source media="(prefers-color-scheme: light)" srcset="README.svg">
+  <img alt="Fallback image description" src="default-image.png">
+</picture>
+
