@@ -29,7 +29,7 @@
 + pdf -> svg
 + Embed svg in md
 + Embed pdf in html on GitHub pages.
-+ Make svg in md clickable to go to html for interactivity (like clicking links).
++ Make svg in md clickable to go to html for interactivity (like #link("https://wentam.net/")[ links]).
 
 = Implemented via makefile
 
