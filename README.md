@@ -1,8 +1,7 @@
 Github doesn't render typst files yet (pls github), so we do a typst -> pdf -> svg compilation,
 then embed the svg here.
 
-This means no clickable links, so we'll list them here:
-* <https://wentam.net/>
+To see an interactive version with selectable text and clickable links <click here>.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="doc_build/README-dark.svg">
