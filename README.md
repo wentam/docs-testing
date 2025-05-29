@@ -3,7 +3,7 @@
 Github doesn't render typst files yet (pls github), so we do a typst -> pdf -> svg compilation,
 then embed the svg here.
 
-To see an interactive version with selectable text and clickable links click here (TODO external link to version I host).
+Click the svg to get a version with clickable links.
 
 ----------
 
