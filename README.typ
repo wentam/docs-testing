@@ -4,34 +4,40 @@
           size: 12pt)
 #set page(columns: 2)
 
+#let title = [ Tricking GitHub into displaying rendered typst documents ]
+#let subtitle = [ Pls GitHub add this. ]
+//#let subtitle = [ TL;DR: typ -> pdf -> svg. Embed svg in md. Embed pdf in html. Click svg in md = go to html. ]
+
 #place(
   top + center,
   scope: "parent",
   float: true,
   text()[
-    Hello! It's a hyperlink: #link("https://wentam.net/").
+    *#title*
+
+    #subtitle
 
     #h(1cm)
   ],
 )
 
-= Abstract
+= TL;DR:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget condimentum velit. Duis dui enim, mattis vitae metus id, porttitor fringilla tellus. Sed non tincidunt ligula. Aliquam vitae bibendum velit. Nam convallis dui quis hendrerit tempus. Suspendisse vel libero eu felis ultricies congue non elementum quam. In eget odio convallis, volutpat turpis in, sodales tortor. Nam mauris libero, cursus ut urna eu, rhoncus hendrerit nibh. Pellentesque ultricies et diam in ullamcorper. Nulla gravida interdum pulvinar.
++ typ -> pdf
++ pdf -> svg
++ Embed svg in md
++ Embed pdf in html on GitHub pages.
++ Make svg in md clickable to go to html for interactivity (like clicking links).
+
+= Implemented via makefile
+
+The makefile will recursively trudge through the repo it's placed in, building svgs, pdfs, and html
+files as needed to support all situations. Markdown files are then generated next to each .typ file
+to reference these resources.
 
 #colbreak()
 
-= Math and stuff!
+= Dark mode and light mode!
 
-We can do math expressions here:
-
-$ A = pi r^2 $
-$ "area" = pi dot "radius"^2 $
-$ cal(A) :=
-    { x in RR | x "is natural" } $
-#let x = 5
-$ #x < 17 $
-
-$ sum_(k=0)^n k
-    &= 1 + ... + n \
-    &= (n(n+1)) / 2 $
+By referencing your browser settings, this is able to support both dark mode and light mode in both
+the .md files and the html files - try changing your browser settings for this and see what happens!
