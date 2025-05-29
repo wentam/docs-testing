@@ -4,7 +4,7 @@
 t="README.typ"
 tmpfile=$(mktemp)
 echo "#set text(fill: white)" > $tmpfile
-cat "$t" > $tmpfile
+cat "$t" >> $tmpfile
 typst compile $tmpfile README-dark.pdf
 typst compile $t README-light.pdf
 
