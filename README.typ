@@ -1,4 +1,5 @@
-#set page(margin: (x: 4pt, y: 0pt))
+#set page(margin: (x: 4pt, y: 0pt)
+          base-font-size: 14pt)
 
 = Heading
 
