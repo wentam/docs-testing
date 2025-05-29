@@ -106,7 +106,6 @@ docs/typ-build/%-embed-light.typ.pdf: %.typ
 	mkdir -p "$$(dirname $@)"
 	tmpfile="$$(mktemp)"; \
 	echo "#set page(margin: (x: 20pt, y: 20pt))" > $$tmpfile; \
-	echo '#set page(fill: rgb("0d1117"))' >> $$tmpfile; \
 	echo "#set text(fill: black)" >> $$tmpfile; \
 	cat "$<" >> $$tmpfile; \
 	typst compile "$$tmpfile" $@
