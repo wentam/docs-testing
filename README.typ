@@ -1,3 +1,5 @@
+#set text(fill: white)
+
 = Heading
 
 Hello typst
