@@ -2,7 +2,7 @@
 
 Hello typst
 
-link("https://wentam.net/", "my site")
+#link("https://wentam.net/")
 
 $ A = pi r^2 $
 $ "area" = pi dot "radius"^2 $
