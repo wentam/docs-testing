@@ -1,5 +1,6 @@
-#set page(margin: (x: 4pt, y: 0pt)
-          base-font-size: 14pt)
+#set page(margin: (x: 4pt, y: 0pt))
+#set text(font: "Iosevka",
+          size: 14pt)
 
 = Heading
 
