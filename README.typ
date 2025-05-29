@@ -1,7 +1,7 @@
 #show link: set text(fill: blue)
 #show link: underline
 #set text(font: "Iosevka NF",
-          size: 14pt)
+          size: 12pt)
 #set page(columns: 2)
 
 #place(
@@ -9,7 +9,7 @@
   scope: "parent",
   float: true,
   text()[
-    Hello! It's a hyplerlink: #link("https://wentam.net/").
+    Hello! It's a hyperlink: #link("https://wentam.net/").
 
     #h(1cm)
   ],
