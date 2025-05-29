@@ -1,4 +1,5 @@
-#set page(margin: (x: 0pt, y: 0pt))
+#show link: set text(fill: blue)
+#show link: underline
 #set text(font: "Iosevka NF",
           size: 16pt)
 
