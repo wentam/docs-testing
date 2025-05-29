@@ -65,7 +65,7 @@ docs/typ-build/%.typ.html: %.typ
 	echo '</html>' >> $@
 
 %.md: %.typ
-	echo "<a href=\"$(GITHUB_PAGES_URL)/$<.html\" target=\"_blank\" rel=\"noopener noreferrer\">" > $@
+	echo "<a href=\"$(GITHUB_PAGES_URL)/typ-build/$<.html\" target=\"_blank\" rel=\"noopener noreferrer\">" > $@
 	echo '  <picture>' >> $@
 	echo "    <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/typ-build/$$(basename $< .typ)-dark.typ.svg\">" >> $@
 	echo "    <source media=\"(prefers-color-scheme: light)\" srcset=\"docs/typ-build/$$(basename $< .typ)-light.typ.svg\">" >> $@
