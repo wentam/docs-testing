@@ -1,3 +1,5 @@
+#set page(margin: (x: 4pt, y: 0pt))
+
 = Heading
 
 Hello typst
