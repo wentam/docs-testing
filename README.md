@@ -1,3 +1,4 @@
 # test
 
-<embed src="README.pdf" type="application/pdf"/>
+[Click here for README](README.pdf)
+
