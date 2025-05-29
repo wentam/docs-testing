@@ -6,7 +6,7 @@ This means no clickable links, so we'll list them here:
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="README.svg">
-  <source media="(prefers-color-scheme: light)" srcset="README.svg">
+  <source media="(prefers-color-scheme: light)" srcset="README-light.svg">
   <img alt="Fallback image description" src="default-image.png">
 </picture>
 
