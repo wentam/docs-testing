@@ -110,6 +110,3 @@ docs/typ-build/%-embed-light.typ.pdf: %.typ
 	echo "#set text(fill: black)" >> $$tmpfile; \
 	cat "$<" >> $$tmpfile; \
 	typst compile "$$tmpfile" $@
-
-docs/type-build/:
-	@mkdir -p docs/typ-build
