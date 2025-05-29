@@ -1,7 +1,7 @@
 #show link: set text(fill: blue)
 #show link: underline
 #set text(font: "Iosevka NF",
-          size: 16pt)
+          size: 14pt)
 #set page(columns: 2)
 
 #place(
