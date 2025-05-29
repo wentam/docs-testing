@@ -1,4 +1,4 @@
-<a href="https://wentam.github.io/docs-testing//typ-build/README.typ.html" target="_blank" rel="noopener noreferrer">
+<a href="https://wentam.github.io/typst-on-gh//typ-build/README.typ.html" target="_blank" rel="noopener noreferrer">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/docs/typ-build/README-dark.typ.svg">
     <source media="(prefers-color-scheme: light)" srcset="/docs/typ-build/README-light.typ.svg">

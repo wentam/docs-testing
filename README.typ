@@ -41,3 +41,11 @@ to reference these resources.
 
 By referencing your browser settings, this is able to support both dark mode and light mode in both
 the .md files and the html files - try changing your browser settings for this and see what happens!
+
+#h(1cm)
+
+= Checklist
+
+- Enable GitHub pages in your repo pointing to the docs/ subdirectory
+- Update GITHUB_PAGES_URL in the makefile
+  - Needed to to find your github pages site in the markdown file
