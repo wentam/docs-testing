@@ -1,21 +1,12 @@
 <html>
   <head>
     <style>
-      * {
-        margin: 0;
-        padding; 0;
+      * { margin: 0; padding; 0; }
+      #pdf-dark { display:none; }
+      @media (prefers-color-scheme: dark) {
+        #pdf-light { display: none; }
+        #pdf-dark { display: block; }
       }
-      #pdf-dark {
-        display:none;
-      }
-     @media (prefers-color-scheme: dark) {
-       #pdf-light {
-         display: none;
-       }
-       #pdf-dark {
-         display: block;
-       }
-     }
     </style>
   </head>
   <body>

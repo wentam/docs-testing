@@ -12,43 +12,23 @@ DOC_LIGHT_SVGS        = $(DOC_SRCS:%.typ=docs/typ-build/%-light.typ.svg)
 DOC_MDS               = $(DOC_SRCS:%.typ=%.md)
 DOC_HTMLS             = $(DOC_SRCS:%.typ=docs/typ-build/%.typ.html)
 
-$(info TYP SRCS         - $(DOC_SRCS))
-$(info DARK PDFS        - $(DOC_DARK_PDFS))
-$(info LIGHT PDFS       - $(DOC_LIGHT_PDFS))
-$(info EMBED DARK PDFS  - $(DOC_EMBED_DARK_PDFS))
-$(info EMBED LIGHT PDFS - $(DOC_EMBED_LIGHT_PDFS))
-$(info MDS              - $(DOC_MDS))
-$(info HTMLS            - $(DOC_HTMLS))
-
 .PHONY: docs
 docs: ${DOC_DARK_PDFS} ${DOC_LIGHT_PDFS} ${DOC_EMBED_DARK_PDFS} ${DOC_EMBED_LIGHT_PDFS} ${DOC_DARK_SVGS} ${DOC_LIGHT_SVGS} ${DOC_MDS} $(DOC_HTMLS)
 
 .PHONY: clean
-clean: clean_docs
-
-.PHONY: clean_docs
-clean_docs:
+clean:
 	rm -fr docs/typ-build/
 	rm $(DOC_MDS)
 
 define DOC_HTML_HEAD
   <head>
     <style>
-      * {
-        margin: 0;
-        padding; 0;
+      * { margin: 0; padding; 0; }
+      #pdf-dark { display:none; }
+      @media (prefers-color-scheme: dark) {
+        #pdf-light { display: none; }
+        #pdf-dark { display: block; }
       }
-      #pdf-dark {
-        display:none;
-      }
-     @media (prefers-color-scheme: dark) {
-       #pdf-light {
-         display: none;
-       }
-       #pdf-dark {
-         display: block;
-       }
-     }
     </style>
   </head>
 endef
