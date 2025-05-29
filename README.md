@@ -8,8 +8,7 @@ To see an interactive version with selectable text and clickable links click her
 ----------
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="doc_build/README-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="doc_build/README-light.svg">
-  <img alt="Fallback image description" src="default-image.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/README-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="docs/README-light.svg">
 </picture>
 
