@@ -45,8 +45,7 @@ docs/typ-build/%.typ.html: %.typ
 	echo '</html>' >> $@
 
 %.md: %.typ
-	echo '<p align="center" dir="auto">' > $@
-	echo "  <a href=\"$(GITHUB_PAGES_URL)/typ-build/$<.html\" target=\"_blank\" rel=\"noopener noreferrer\">" >> $@
+	echo "  <a href=\"$(GITHUB_PAGES_URL)/typ-build/$<.html\" target=\"_blank\" rel=\"noopener noreferrer\">" > $@
 	echo '    <picture>' >> $@
 	file="  $<"; \
 	echo "      <source media=\"(prefers-color-scheme: dark)\" srcset=\"/docs/typ-build/$${file%.*}-dark.typ.svg\">" >> $@; \
@@ -54,7 +53,6 @@ docs/typ-build/%.typ.html: %.typ
 	echo '      <img alt="Fallback image description" src="default-image.png">' >> $@
 	echo '    </picture>' >> $@
 	echo '  </a>' >> $@
-	echo '</p>' >> $@
 
 docs/typ-build/%.typ.svg: docs/typ-build/%.typ.pdf
 	mkdir -p "$$(dirname $@)"
