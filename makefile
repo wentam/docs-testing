@@ -56,9 +56,13 @@ docs/typ-build/%.typ.html: %.typ
 	echo '  </a>' >> $@
 	echo '</p>' >> $@
 
-docs/typ-build/%.typ.svg: docs/typ-build/%.typ.pdf
+docs/typ-build/%-dark.typ.svg: %.typ
 	mkdir -p "$$(dirname $@)"
-	inkscape --without-gui --file="$<" --pdf-poppler --export-plain-svg="$@"
+	typst compile -f svg $< $@
+
+docs/typ-build/%-light.typ.svg: %.typ
+	mkdir -p "$$(dirname $@)"
+	typst compile -f svg $< $@
 
 docs/typ-build/%-dark.typ.pdf: %.typ
 	mkdir -p "$$(dirname $@)"

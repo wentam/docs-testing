@@ -26,7 +26,7 @@
 = TL;DR:
 
 + typ -> pdf
-+ pdf -> svg
++ typ -> svg
 + Embed svg in md
 + Embed pdf in html on GitHub pages.
 + Make svg in md clickable to go to html for interactivity (like #link("https://wentam.net/")[ links]).
@@ -48,10 +48,11 @@ the .md files and the html files - try changing your browser settings for this a
 = Dependencies
 
 - typst
-- inkscape
-  - For pdf to svg conversion
+- GNU make
 - mktemp
   - Used in makefile
+
+#h(1cm)
 
 #h(1cm)
 
