@@ -59,7 +59,7 @@ docs/typ-build/%.typ.html: %.typ
 docs/typ-build/%-dark.typ.svg: %.typ
 	mkdir -p "$$(dirname $@)"
 	tmpfile="$$(mktemp)"; \
-	echo "#set page(margin: (x: 0pt, y: 0pt))" > $$tmpfile; \
+	echo "#set page(margin: (x: 0pt, y: 0pt), fill:none)" > $$tmpfile; \
 	echo "#set text(fill: white)" >> $$tmpfile; \
 	cat "$<" >> $$tmpfile; \
 	typst compile -f svg $$tmpfile $@
@@ -67,7 +67,7 @@ docs/typ-build/%-dark.typ.svg: %.typ
 docs/typ-build/%-light.typ.svg: %.typ
 	mkdir -p "$$(dirname $@)"
 	tmpfile="$$(mktemp)"; \
-	echo "#set page(margin: (x: 0pt, y: 0pt))" > $$tmpfile; \
+	echo "#set page(margin: (x: 0pt, y: 0pt), fill:none)" > $$tmpfile; \
 	echo "#set text(fill: black)" >> $$tmpfile; \
 	cat "$<" >> $$tmpfile; \
 	typst compile -f svg $$tmpfile $@
